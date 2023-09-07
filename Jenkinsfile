@@ -41,7 +41,7 @@ node{
     stage('Sonarqube Static code analysis'){
         def scannerHome = tool 'sonarqube';
         withSonarQubeEnv('sonarqube'){
-            sh 'pip install -r requirements.txt'
+            // sh 'pip install -r requirements.txt'
             sh "${scannerHome}/bin/sonar-scanner \
             -D sonar.login=admin \
             -D sonar.password=binduramesh@1822 \
