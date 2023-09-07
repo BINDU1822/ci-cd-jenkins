@@ -45,6 +45,7 @@ node{
             -D sonar.login=admin \
             -D sonar.password=binduramesh@1822 \
             -D sonar.projectkey=sonartest \
+            -D sonar.exclusions=vendors/**,resources/**,**/*,java \
             -D sonar.host.url=http://117.208.152.165:9000/"
         }
     }
