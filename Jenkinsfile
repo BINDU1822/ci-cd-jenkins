@@ -12,7 +12,7 @@ pipeline {
                 def scannerHome = tool 'sonarqube';
                 withSonarQubeEnv('sonarqube'){
                     sh 'pip install -r requirements.txt'
-                    sh "${scannerHome}/bin/sonar-scanner
+                    sh "${scannerHome}/bin/sonar-scanner \
                     -D sonar.login=admin \
                     -D sonar.password=binduramesh@1822 \
                     -D sonar.projectkey=sonartest \
